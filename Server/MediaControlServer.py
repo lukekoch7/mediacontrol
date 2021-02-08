@@ -1,6 +1,5 @@
 import socket
 import pyautogui
-import sys
 
 HOST = socket.gethostbyname(socket.gethostname())
 PORT = 9004
