@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_pause">PLAY/PAUSE</string>
+    <string name="plus">+</string>
+    <string name="save">Save</string>
+    <string name="nexttrack">⏭</string>
+    <string name="enter_your_ip">Enter your IP</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MediaControl</string>
+    <string name="play_pause">PLAY/PAUSE</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="save">Save</string>
+    <string name="nexttrack">⏭</string>
+    <string name="prevtrack">⏮</string>
+    <string name="enter_your_ip">Enter your IP</string>
+</resources>
