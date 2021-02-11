@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/pause"
+        style="@android:style/Widget.Button"
+        android:layout_width="337dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_500"
+        android:baselineAligned="false"
+        android:text="@string/play_pause"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus"
+        style="@android:style/Widget.Button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="85dp"
+        android:text="@string/plus"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minus"
+        style="@android:style/Widget.Button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/minus"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/editIP"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/pause" />
+
+    <EditText
+        android:id="@+id/editIP"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="251dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/enter_your_ip"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveIP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveIP"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editIP" />
+
+    <Button
+        android:id="@+id/nexttrack"
+        style="@android:style/Widget.Button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/nexttrack"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/editIP"
+        app:layout_constraintStart_toEndOf="@+id/prevtrack"
+        app:layout_constraintTop_toBottomOf="@+id/pause" />
+
+    <Button
+        android:id="@+id/prevtrack"
+        style="@android:style/Widget.Button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="85dp"
+        android:text="@string/prevtrack"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="233dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="570dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="178dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="prevtrack,minus,nexttrack,plus"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="plus,minus"
+        tools:layout_editor_absoluteX="396dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="prevtrack,nexttrack"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
